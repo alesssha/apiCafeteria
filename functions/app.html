@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>DD Café</title>
+		<link rel="stylesheet" href="app.css" />
+	</head>
+	<body>
+		<header>
+			<form id="searchForm" class="search-form">
+				<input type="search" id="productName" placeholder="Ingrese el nombre del producto" />
+				<button type="submit" onclick="searchProduct()">Buscar</button>
+			</form>
+			<div id="searchResults"></div>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">ke$ha api</span>
+							<span class="number">Sharon & Keyla</span>
+						</div>
+					</div>
+
+					<div class="container-logo">
+						<i class="fa-solid fa-mug-hot"></i>
+						<h1 class="logo"><a href="/">Euphoria Delights</a></h1>
+					</div>
+					
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Cafes</a></li>
+						<li><a href="#">Malteadas</a></li>
+						<li><a href="#">Limonadas</a></li>
+					</ul>
+
+					
+				</nav>
+			</div>
+		</header>
+		
+
+		<section class="banner">
+			<div class="content-banner">
+				<p>Café Delicioso</p>
+				<h2>100% Natural <br />Café Fresco</h2>
+				<a href="#">Visita nuestra tienda</a>
+			</div>
+
+
+			<section class="container top-products">
+				<h1 class="heading-1">Nuestras bebidas</h1>
+
+				<div class="container-options">
+					<span class="active">Lo mejor de nuestra cafeteria</span>
+				</div>
+
+
+				<div class="container-products">
+					
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/latte.png?alt=media" alt="Latte" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Latte</h3>
+							<h4>Un shot de espreso con leche</h4>
+							
+							<p class="price">$30 pesos 
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/affogato.png?alt=media&token=d72a33b8-dee6-4c93-a88c-9daee80bc030"
+								alt="affogato.png"
+								class="keyla"
+							/>
+						
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Affogato</h3>
+							<h4>Un shot de espreso con una bola de nieve de vainilla con jarabe de chocolate.</h4>
+							<p class="price">$50 pesos
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/coldbrew.png?alt=media&token=720287b8-763d-452e-88d2-8560ee9f0c33"
+								alt="coldbrew"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Cold Brew</h3>
+                            <h4>Agua con café y hielo.</h4>
+							<p class="price">$35 pesos</p>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/cappuccino.png?alt=media&token=ef78c3c1-fc5c-4d5b-a02d-485f619f7378" alt="Cappuccino" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cappuccino</h3>
+							<h4>shot de espreso, leche y espuma de leche.</h4>
+							<p class="price">$40 pesos</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container specials">
+				<div class="container-products">
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/caramel.png?alt=media&token=8503f65c-d653-42bd-883d-d541efcdac54" alt="Caramelo Frappuccino" class="small-image" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Caramelo frappuccino</h3>
+						    <h4> Leche, café, jarabe de Caramelo, extracto de caramelo, crema batida, cubitos de caramelo para decoración.</h4>
+							</span>
+							<p class="price">$40 pesos
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/mochaccino.png?alt=media&token=cde8018b-570b-4ac7-9350-4814abe85c0d"
+								alt="mochaccino"
+								class="keykey"
+							/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Mochaccino</h3>
+						    <h4>shot de espresso, leche en espuma, chocolate en jarabe y crema batida.</h4>
+							<p class="price">$50 pesos
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/cafe.png?alt=media&token=6102c254-d719-43b6-9635-f270aa83c9db" alt="Cafe" class="itskey" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Cafe</h3>
+							<h4>1/3 espresso y 2/3 de leche </h4>
+							</span>
+							<p class="price">$40 pesos
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/bombonhelado.png?alt=media&token=ed2cd068-2ade-4ac2-b42d-06b5f911fc13" alt="bombonhelado" class="shakey"/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Bombón helado</h3>
+						    <h4>Nata montada, café, leche condensada, hielo y una bola de nieve.</h4>
+							</span>
+							<p class="price">$50 pesos</p>
+						</div>
+					</div>
+				</div>
+
+               
+				<div class="container-products">
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/macciato.png?alt=media&token=086221c3-a22e-4a97-aa03-03d42b2aaaf4" alt="macciato" class="shiki" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Espresso de Macciato</h3>
+							<h4>Un shot de espreso con leche</h4>
+							
+							<p class="price">$45 pesos 
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/vainilla.png?alt=media&token=509c2fd0-00c2-4f57-9731-f49f48eb78ee"
+								alt="Vainilla"
+								class="keyla"
+							/>
+						
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Malteada de vainilla</h3>
+							<h4>Leche, dos bolas de helado de vainilla, extracto de vainilla y dos trozos de chocolate blanco.</h4>
+							<p class="price">$25 pesos
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/fresa.png?alt=media&token=a78cb5b3-1b39-4325-8925-85042484930d"
+								alt="fresa"
+								class="jk"
+							/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Malteada de fresa</h3>
+                            <h4>Leche, dos bolas de helados de fresa, jarabe de fresa y dos fresas frescas. 
+							</h4>
+							<p class="price">$25 pesos</p>
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/chocolate.png?alt=media&token=952879dd-abdb-4db7-8d4d-34611f62dc34" alt="chocolate" class="jm"/>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Malteada de chocolate</h3>
+							<h4> Leche, dos bolas de chocolate, jarabe de chocolate, dos trozos de chocolate y hielo.</h4>
+							<p class="price">$25 pesos</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container specials">
+				<div class="container-products">
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/boba.png?alt=media&token=129ebfcd-a592-4fe0-b234-a4d34e31eced" alt="boba" class="bobi" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Taro de tapioca</h3>
+						    <h4> Bolitas de tapioca con leche y polvo de Taro</h4>
+							</span>
+							<p class="price">$55 pesos
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/blueberry.png?alt=media&token=c8208413-54b1-4d50-a30f-bd26b2991c66"
+								alt="blueberry"
+								class="rm"
+							/>
+							
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Limonada de moras azules</h3>
+						    <h4>Limones con azúcar, jarabe de mora azul y agua. </h4>
+							<p class="price">$25 pesos
+						</div>
+					</div>
+					<div class="card-product">
+						<div class="container-img">
+							<img src="https://firebasestorage.googleapis.com/v0/b/cafeteria-183ec.appspot.com/o/cherry.png?alt=media&token=6511de80-9594-474e-b33d-c43bb4e222f1" alt="Cherry" class="itskey" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>Limonada de cherry</h3>
+							<h4> Limones con azúcar, jarabe de cherry y agua.  </h4>
+							</span>
+							<p class="price">$25 pesos
+
+						</div>
+						
+						<script src="fichero.js"></script> <!-- Importa tu archivo de configuración de Firebase -->
+				
+		</body>
+	</html>
+
+					
